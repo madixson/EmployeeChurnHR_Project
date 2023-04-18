@@ -1,7 +1,5 @@
 ![Banner](HRBanner.png)
 
-![](UTA-DataScience-Logo.png)
-
 # Predicting Employee Attrition
 
 * **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
