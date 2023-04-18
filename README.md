@@ -1,3 +1,5 @@
+![Banner](HRBanner.png)
+
 ![](UTA-DataScience-Logo.png)
 
 # Predicting Employee Attrition
