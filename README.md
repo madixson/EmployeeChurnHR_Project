@@ -1,4 +1,4 @@
-![Banner](HR_Banner.png)
+![Banner](EmployeeChurnBanner.png)
 
 # Predicting Employee Attrition
 
