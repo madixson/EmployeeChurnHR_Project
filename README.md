@@ -2,7 +2,7 @@
 
 # Employee Churn Prediction
 
-This repository aims to predict employee churn using five different machine learning models (KNN, Random Forest, Naive Bayes, Logistic Regression, and a simple MLP Neural Network) and analyze their results using the [Employee churn analysis](https://www.kaggle.com/code/waleedfaheem/employee-churn-analysis-accuracy-97/input) dataset from Kaggle.
+This repository aims to predict employee churn using five different machine learning models (KNN, Random Forest, Naive Bayes, Logistic Regression, and a simple MLP Neural Network) and analyze their results using the [HR Analytics](https://www.kaggle.com/datasets/giripujar/hr-analytics) dataset from Kaggle.
 
 ## Overview
 
@@ -10,24 +10,29 @@ This project aims to predict employee churn using five different machine learnin
 
 ## Summary of Workdone
 
-Include only the sections that are relevant an appropriate.
-
 ### Data
 
 * Data:
-  * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Input: CSV file of 10 features (satisfaction level, last evaluation, number of projects, average monthly hours, time spent at the company, work accidents, left, promotion in the last 5 years, department, and salary)
+  * Output: Predicted binary label on whether an employee will churn or not.
+  * Size: 566.79 kB; The original dataset contains 14,999 instances and 10 features.
+  * Instances: The data was split into a training set containing 70% of the original data, and a testing set containing 30% of the original data.
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+These preprocessing steps help in cleaning and transforming the dataset in a format that can be used for the machine learning algorithms.
+* Missing values are removed using df_raw.dropna() function.
+* Boxplots are created for numerical features to identify any outliers or extreme values.
+* Categorical variables are encoded (Label encoding replaces each category with a numerical value, with the same value being assigned to all instances of that category and allows the algorithm to process the data)
+* The target variable/feature 'left' is separated from the rest of the dataset and stored as the target variable.
+* The remaining dataset is stored once target variable is separated
 
 #### Data Visualization
 
 Show a few visualization of the data and say a few words about what you see.
+![](CorrCoef-Heatmap.png)
+* The correlation matrix heat map can show which features are strongly correlated with the employee churn target variable.
+* With the map we can see the strongest correlation, -0.39, with the "left" target feature would be the employee's "satisfaction level"
 
 ### Problem Formulation
 
