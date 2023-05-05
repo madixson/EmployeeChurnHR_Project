@@ -141,9 +141,19 @@ Neural Network MLP:
 * Note that all of these notebooks should contain enough text for someone to understand what is happening.
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* Required packages:
+      * pandas
+      * numpy
+      * StandardScaler from sklearn.preprocessing
+      * train_test_split, classification_report, confusion_matrix from sklearn.model_selection
+      * KNeighborsClassifier from sklearn.neighbors
+      * RandomForestClassifier, cross_val_score, plot_tree from sklearn.ensemble
+      * GaussianNB from sklearn.naive_bayes
+      * LogisticRegression from sklearn.linear_model
+      * Sequential, Dense from keras.models and keras.layers
+      * plot_confusion_matrix from mlxtend.plotting
+      * scikitplot, pyplot, ConfusionMatrixDisplay from sklearn.metrics
+* Note that scikit-learn, scikit-plot, and keras are installed through pip.
 
 ### Data
 
