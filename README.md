@@ -2,14 +2,11 @@
 
 # Employee Churn Prediction
 
-This repository aims to predict employee churn using five different machine learning models (KNN, Random Forest, Naive Bayes, Logistic Regression, and Neural Network) and analyze their results using the [Employee churn analysis](https://www.kaggle.com/code/waleedfaheem/employee-churn-analysis-accuracy-97/input) dataset from Kaggle.
+This repository aims to predict employee churn using five different machine learning models (KNN, Random Forest, Naive Bayes, Logistic Regression, and a simple MLP Neural Network) and analyze their results using the [Employee churn analysis](https://www.kaggle.com/code/waleedfaheem/employee-churn-analysis-accuracy-97/input) dataset from Kaggle.
 
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+This project aims to predict employee churn using five different machine learning models: KNN, Random Forest, Naive Bayes, Logistic Regression, and a simple MLP Neural Network. The challenge is to develop models that can accurately predict which employees are most likely to leave a company, based on a range of input features such as average monthly work hours, recent promotion statuses, and salary. Our approach formulates the problem as a classification task, using the five models mentioned as predictors with various hyperparameters. We evaluated each model's performance using metrics such as accuracy, precision, recall, and F1 score, and compared their results. Our best model was able to achieve an accuracy of _% on the test data, outperforming the other models.
 
 ## Summary of Workdone
 
