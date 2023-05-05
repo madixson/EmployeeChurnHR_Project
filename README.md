@@ -172,12 +172,5 @@ Neural Network MLP:
 
 
 ## Citations
-
-* Provide any references.
-
-
-
-
-
-
-
+* https://www.kaggle.com/code/waleedfaheem/employee-churn-analysis-accuracy-97
+* https://www.kaggle.com/datasets/giripujar/hr-analytics
