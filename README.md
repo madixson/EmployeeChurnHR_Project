@@ -125,25 +125,16 @@ Neural Network MLP:
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+  * EmployeeChurnProject.ipynb: Notebook holds entire project code combined
+  * Data_Preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup. Additional exploratory variable analysis can be found as well.
+  * Models.ipynb: Creates and implements all 5 models (KNN, Random Forest, Naive Bayes, Logistic Regression, and MLP Neural Network)
+  * Models_with_Analysis.ipynb: Creates various visualizations of the data from the model results
 
 ### Software Setup
-* Required packages:
-      * pandas
+* Required Packages
+  * We used:
       * numpy
+      * pandas
       * StandardScaler from sklearn.preprocessing
       * train_test_split, classification_report, confusion_matrix from sklearn.model_selection
       * KNeighborsClassifier from sklearn.neighbors
@@ -157,8 +148,7 @@ Neural Network MLP:
 
 ### Data
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
+* The dataset can be downloaded from Kaggle: [HR Analytics](https://www.kaggle.com/datasets/giripujar/hr-analytics).
 
 ### Training
 
