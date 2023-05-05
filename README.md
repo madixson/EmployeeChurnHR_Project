@@ -29,10 +29,11 @@ These preprocessing steps help in cleaning and transforming the dataset in a for
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
-![](CorrCoef_Heatmap.png)
 * The correlation matrix heat map can show which features are strongly correlated with the employee churn target variable.
 * With the map we can see the strongest correlation, -0.39, with the "left" target feature would be the employee's "satisfaction level"
+
+![](CorrCoef_Heatmap.png)
+
 
 ### Problem Formulation
 
