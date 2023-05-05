@@ -76,27 +76,52 @@ These preprocessing steps help in cleaning and transforming the dataset in a for
 
 ### Training
 
-* Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
+* The code implement various machine learning models in Python using the scikit-learn and keras libraries. The code also demonstrates how to evaluate the performance of each model using common evaluation metrics such as confusion matrix and classification report.
+
+KNN:
+* Uses the K-nearest neighbors algorithm to classify data points.
+* The number of neighbors (K) is set to 2 and the distance metric used is Euclidean distance.
+* Trains the model on the training set and predicts the target variable on the test set.
+
+Random Forest:
+* Uses a decision tree-based ensemble method to classify data points.
+* The default number of decision trees in the forest is 100.
+* Trains the model on the training set and predicts the target variable on the test set.
+* Uses cross-validation to evaluate the model's performance.
+
+Naive Bayes:
+* Uses the Gaussian Naive Bayes algorithm to classify data points.
+* Trains the model on the training set and predicts the target variable on the test set.
+
+Logistic Regression:
+* Uses the logistic regression algorithm to classify data points.
+* The maximum number of iterations is set to 1000.
+* Trains the model on the training set and predicts the target variable on the test set.
+
+Neural Network MLP:
+* Uses a multi-layer perceptron (MLP) neural network to classify data points.
+* The MLP has 3 layers with 64, 32, and 1 neurons, respectively.
+* Uses the sigmoid activation function in the output layer.
+* Trains the model on the training set for 50 epochs with a batch size of 32 and prints the training progress.
+* Predicts the target variable on the test set.
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+* The performance of the models can be evaluated based on their accuracy, precision, recall, and F1-score.
+
+* From the analysis of the results, it can be observed that KNN, Random Forest, and MLP Neural Network achieved high accuracy, precision, recall, and F1-score of around 0.97. These three models are very good at correctly classifying employees who will churn and those who will not churn.
+
+* On the other hand, Naive Bayes and Logistic Regression did not perform as well as the other models, with an accuracy of 0.79 and 0.76, respectively. The precision, recall, and F1-score for both models are also much lower than those of KNN, Random Forest, and MLP Neural Network. Therefore, Naive Bayes and Logistic Regression may not be the best models for predicting employee churn in this scenario.
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* In summary, KNN, Random Forest, and MLP Neural Network are recommended for predicting employee churn, as they have shown to be more accurate and reliable in the given dataset.
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* We would like to do model tuning in the future. Although the models used in this project achieved high accuracy, there may be ways to optimize their hyperparameters to further improve their performance. One approach is to use grid search or randomized search to identify the optimal set of hyperparameters for each model.
+* We would also like to consider long-term prediction in the future. In this project, we focused on predicting employee churn in the short term. However, it would be interesting to explore how models can predict employee churn in the long term and whether there are additional factors that contribute to employee retention in the long run. This could potentially help organizations develop more effective retention strategies and reduce the cost of employee turnover.
+
 
 ### Overview of files in repository
 
