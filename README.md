@@ -6,7 +6,7 @@ This repository aims to predict employee churn using five different machine lear
 
 ## Overview
 
-This project aims to predict employee churn using five different machine learning models: KNN, Random Forest, Naive Bayes, Logistic Regression, and a simple MLP Neural Network. The challenge is to develop models that can accurately predict which employees are most likely to leave a company, based on a range of input features such as average monthly work hours, recent promotion statuses, and salary. Our approach formulates the problem as a classification task, using the five models mentioned as predictors with various hyperparameters. We evaluated each model's performance using metrics such as accuracy, precision, recall, and F1 score, and compared their results. Our best model was able to achieve an accuracy of _% on the test data, outperforming the other models.
+This project aims to predict employee churn using five different machine learning models: KNN, Random Forest, Naive Bayes, Logistic Regression, and a simple MLP Neural Network. The challenge is to develop models that can accurately predict which employees are most likely to leave a company, based on a range of input features such as average monthly work hours, recent promotion statuses, and salary. Our approach formulates the problem as a classification task, using the five models mentioned as predictors with various hyperparameters. We evaluated each model's performance using metrics such as accuracy, precision, recall, and F1 score, and compared their results. Our best model was able to achieve an accuracy of 99% on the test data, outperforming the other models.
 
 ## Summary of Workdone
 
@@ -37,11 +37,42 @@ These preprocessing steps help in cleaning and transforming the dataset in a for
 
 ### Problem Formulation
 
-* Define:
-  * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+  * Input: CSV data includes various features: satisfaction level, last evaluation, number of projects, average monthly hours, time spent at the company, work accidents, left, promotion in the last 5 years, department, and salary
+  * Output: Predicted binary label on whether an employee will churn or not. 0 represents an employee who is still with the company, while 1 represents an employee who has left the company.
+  * Models:
+  
+   <br />  1) K-Nearest Neighbors (KNN)
+  * This model was chosen because it's a simple yet effective classification algorithm for small datasets.
+  * This is a non-parametric algorithm that classifies a new observation by looking at its k-nearest neighbors in the training set. The classification is based on the most common class among the k-nearest neighbors. 
+  * The hyperparameters used in the code are:
+      * n_neighbors: The number of neighbors to consider. In this code, it is set to 2.
+      * metric: The distance metric used to compute the distance between two observations. In this code, it is set to 'euclidean'.
+     
+   <br />  2) Random Forest
+  * This model was chosen because it's an ensemble learning method that can handle nonlinear relationships, interactions, and high dimensional data well.
+  * This is an ensemble learning algorithm that combines multiple decision trees to improve the model's accuracy and reduce overfitting. 
+  * The hyperparameters used in the code are:
+      * n_estimators: The number of trees in the forest. In this code, the default value is used.
+      
+   <br />  3) Naive Bayes
+  * This model was chosen because it's a probabilistic classifier that assumes independence among the predictors, and works well with high-dimensional data.
+  * This is a probabilistic algorithm that assumes the independence of each feature and predicts the class based on the joint probability of the features.
+  * No hyperparameters are used for Gaussian Naive Bayes in this code.
+      
+   <br />  4) Logistic Regression
+  * This model was chosen because it's a widely used classification algorithm that's easy to interpret and can handle binary and multi-class problems.
+  * This is a parametric algorithm that models the probability of an observation belonging to a class using a logistic function.
+  * The hyperparameters used in the code are:
+      * max_iter: The maximum number of iterations for the solver to converge. In this code, it is set to 1000.
+  
+   <br />  5) Multilayer Perceptron (MLP) Neural Network
+  * This model was chosen because it can capture complex nonlinear relationships and interactions among the predictors, and can handle both binary and multi-class problems.
+  * This is a feedforward neural network that consists of multiple layers of nodes, each with a set of weights and biases. The layers are connected in a way that each node in one layer is connected to every node in the next layer. 
+  * The hyperparameters used in the code are:
+      * epochs: The number of times the training data is used to update the weights. In this code, it is set to 50.
+      * batch_size: The number of samples to be used for each update. In this code, it is set to 32.
+      * loss: The loss function to be optimized during training. In this code, binary cross-entropy is used.
+      * optimizer: The optimizer used to update the weights during training. In this code, Adam optimizer is used.
 
 ### Training
 
@@ -66,14 +97,6 @@ These preprocessing steps help in cleaning and transforming the dataset in a for
 
 * What would be the next thing that you would try.
 * What are some other studies that can be done starting from here.
-
-## How to reproduce results
-
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
 
 ### Overview of files in repository
 
