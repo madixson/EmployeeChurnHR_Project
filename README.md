@@ -1,9 +1,8 @@
 ![Banner](EmployeeChurnBanner.png)
 
-# Predicting Employee Attrition
+# Employee Churn Prediction
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
-"Get Rich" Kaggle challenge (provide link). 
+This repository aims to predict employee churn using five different machine learning models (KNN, Random Forest, Naive Bayes, Logistic Regression, and Neural Network) and analyze their results using the [Employee churn analysis](https://www.kaggle.com/code/waleedfaheem/employee-churn-analysis-accuracy-97/input) dataset from Kaggle.
 
 ## Overview
 
