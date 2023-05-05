@@ -152,11 +152,23 @@ Neural Network MLP:
 
 ### Training
 
-* Describe how to train the model
+* To train the employee churn prediction model, you need to follow these steps:
+* Load the dataset using pandas.
+* Preprocess the data by converting categorical features to numeric features using one-hot encoding, scaling the numerical features using StandardScaler, and splitting the dataset into training and testing sets using train_test_split.
+* Instantiate the classifier models including KNN, Random Forest, Naive Bayes, Logistic Regression, and Neural Network MLP.
+* Fit each classifier on the training set.
+* Predict the target variable for the test set using each classifier.
+* Evaluate the performance of each classifier using confusion matrix and classification report.
 
 #### Performance Evaluation
 
-* Describe how to run the performance evaluation.
+* Load the dataset using pandas.
+* Preprocess the data by converting categorical features to numeric features using one-hot encoding, scaling the numerical features using * * StandardScaler, and splitting the dataset into training and testing sets using train_test_split.
+* Instantiate the classifier models including KNN, Random Forest, Naive Bayes, Logistic Regression, and Neural Network MLP.
+* Fit each classifier on the training set.
+* Predict the target variable for the test set using each classifier.
+* Evaluate the performance of each classifier using confusion matrix and classification report.
+* Visualize the performance of each classifier using a confusion matrix plot and a ROC curve.
 
 
 ## Citations
