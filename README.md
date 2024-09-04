@@ -174,3 +174,8 @@ Neural Network MLP:
 ## Citations
 * https://www.kaggle.com/code/waleedfaheem/employee-churn-analysis-accuracy-97
 * https://www.kaggle.com/datasets/giripujar/hr-analytics
+
+## Collaborators 
+* Madison Nguyen
+* Alyssa Juarez
+* Zehra Erden
